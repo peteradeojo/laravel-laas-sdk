@@ -1,0 +1,36 @@
+{
+    "name": "peteradeojo/laas",
+    "description": "Demo",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OneZero\\Laas\\LaasServiceProvider"
+            ],
+            "aliases": {
+                "Laas": "OneZero\\Laas\\Facade"
+            }
+        }
+    },
+    "autoload": {
+        "files": [
+            "src/Support/helpers.php"
+        ],
+        "psr-4": {
+            "OneZero\\Laas\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OneZero\\Laas\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.18",
+        "mockery/mockery": "^1.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
