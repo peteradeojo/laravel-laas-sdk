@@ -1,6 +1,6 @@
 {
     "name": "onezero/laas",
-    "description": "Demo",
+    "description": "Laravel package for integrating the LAAS API",
     "extra": {
         "laravel": {
             "providers": [
