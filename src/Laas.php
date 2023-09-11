@@ -47,7 +47,7 @@ class Laas
         try {
             $response = Http::withHeader('APP_ID', $this->app_token)->post("https://laas-api.up.railway.app/v1/logs", [
                 "level" => $level,
-                "message" => $message,
+                "text" => $message,
                 "context" => $context,
             ])->throw()->json();
 
