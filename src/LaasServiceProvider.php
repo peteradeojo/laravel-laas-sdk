@@ -23,9 +23,8 @@ class LaasServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $config = realpath(__DIR__ . '/../config/laas.php');
         $this->publishes([
-            $config => config_path('laas.php'),
+            __DIR__ . '/config.php' => config_path('laas.php'),
         ]);
     }
 
