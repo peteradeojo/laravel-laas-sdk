@@ -54,7 +54,7 @@ class Laas
             $data['context'] = $context;
         }
         try {
-            $response = Http::withHeader('APP_ID', $this->app_token)->post("https://laas-api.up.railway.app/v1/logs", $data)->throw()->json();
+            $response = Http::withHeader('APP_ID', $this->app_token)->post("https://lamp-api-go.up.railway.app/v1/logs", $data)->throw()->json();
 
             return $response['ok'];
         } catch (\Exception $e) {
